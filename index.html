@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
+      
+</head>
+
+<body>
+
+<div class="form-box">
+    <h2>Registration Form</h2>
+
+    <form>
+        <!-- First & Last Name in One Row -->
+    <div class="row">
+        <div> 
+            <div class="input-box">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="First Name" required>
+            </div>
+        </div>
+        <div> 
+            <div class="input-box">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+        </div>        
+    </div>
+
+         <!-- Email -->
+     <div class="input-box">
+        <i class="fa fa-envelope"></i>
+        <input type="email" placeholder="Email" required>
+    </div>
+    <!-- Password -->
+    <div class="input-box">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Password" required>
+    </div>
+
+    <!-- Re-type Password -->
+    <div class="input-box">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Re-type Password" required>
+    </div>
+  
+ <!-- Mobile -->
+    <div class="input-box">
+        <i class="fa-solid fa-mobile"></i>
+        <input type="tel" pattern="[0-9]{11}" placeholder="01774865505" required>
+    </div>
+     <!-- Dob -->
+    <div class="input-box">
+        <i class="fa-solid fa-calendar"></i>
+        <input type="date" placeholder="Date of Birth" required>
+    </div>
+    <!-- Gender -->
+    <div class="gender">
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+    </div>
+
+    <!-- Distict --> 
+    <select required>
+        <option value="">Select District</option>
+        <option>Jhenaidah</option>
+        <option>Magura</option>
+        <option>Jessore</option>
+        <option>Cummila</option> 
+    </select>
+
+    <!-- Checkboxes -->
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox" required>
+            I agree to the Terms and Conditions
+        </label>
+    </div>
+
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox">
+            I want to receive the newsletter
+        </label>
+    </div>
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
+
+</body>
+</html>
